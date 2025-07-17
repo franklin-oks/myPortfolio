@@ -66,8 +66,8 @@ const Nav = () => {
                 key={target}
                 to={target}
                 smooth={true}
-                duration={500}
-                offset={-70}
+                duration={3000}
+                offset={-20}
                 className="cursor-pointer relative text-neutral-900 dark:text-white hover:text-orange-400 transition-colors duration-300 after:content-[''] after:block after:h-[2px] after:bg-orange-400 after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-300 after:origin-left"
               >
                 {label}
@@ -77,8 +77,8 @@ const Nav = () => {
             <Link
               to="contact"
               smooth={true}
-              duration={500}
-              offset={-70}
+              duration={3000}
+              offset={-20}
               className="border-2 p-2 shadow-2xl rounded-xl font-bold border-neutral-900 animate-bounce cursor-pointer dark:border-neutral-100 dark:text-white"
             >
               Contact
@@ -111,7 +111,7 @@ const Nav = () => {
               animate="visible"
               exit="exit"
               variants={menuVariants}
-              transition={{ duration: 0.9 }}
+              transition={{ duration: 0.4 }}
               className="bg-neutral-100 text-neutral-900 dark:bg-neutral-900 dark:text-neutral-100 mb-8 pb-7  py-15 text-3xl flex flex-col space-y-8"
             >
               {navLinks.map(({ label, target }) => (
@@ -119,7 +119,7 @@ const Nav = () => {
                   key={target}
                   to={target}
                   smooth={true}
-                  duration={500}
+                  duration={4000}
                   offset={-70}
                   onClick={() => setOpenNav(!openNav)}
                   className="cursor-pointer relative text-neutral-900 dark:text-white hover:text-orange-400 transition-colors duration-500 after:content-[''] after:block after:h-[2px] after:bg-orange-400 after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-500 after:origin-left w-20"
@@ -127,6 +127,26 @@ const Nav = () => {
                   {label}
                 </Link>
               ))}
+              <Link
+                to="youtube"
+                smooth={true}
+                duration={3000}
+                offset={-20}
+                onClick={() => setOpenNav(!openNav)}
+                className="cursor-pointer relative text-neutral-900 dark:text-white hover:text-orange-400 transition-colors duration-500 after:content-[''] after:block after:h-[2px] after:bg-orange-400 after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-500 after:origin-left w-20"
+              >
+                YouTube
+              </Link>
+              <Link
+                to="education"
+                smooth={true}
+                duration={3000}
+                offset={-20}
+                onClick={() => setOpenNav(!openNav)}
+                className="cursor-pointer relative text-neutral-900 dark:text-white hover:text-orange-400 transition-colors duration-500 after:content-[''] after:block after:h-[2px] after:bg-orange-400 after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-500 after:origin-left w-20"
+              >
+                Education
+              </Link>
 
               <Link
                 to="contact"
