@@ -13,7 +13,7 @@ import { FaPhoneAlt } from "react-icons/fa";
 import { GrStatusGood } from "react-icons/gr";
 import { FaFacebook, FaInstagram, FaGithub } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
-// import { FaMobile } from "react-icons/fa";
+
 import { FaLinkedin } from "react-icons/fa6";
 import Captions from "../captions/Captions";
 import emailjs from "@emailjs/browser";

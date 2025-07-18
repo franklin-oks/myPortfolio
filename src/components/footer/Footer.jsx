@@ -4,7 +4,7 @@ import { Link } from "react-scroll";
 const Footer = () => {
   return (
     <footer className="w-full bg-blue-950 pt-15 h-auto p-4">
-      <h2 className="text-center pt-8 font-bold text-xl text-white">
+      <h2 className="text-center lg:pt-4 pt-8 font-bold text-xl text-white">
         Quick Links
       </h2>
       <div className="flex flex-col p-2 lg:px-12 md:flex-row justify-around gap-4">
@@ -26,15 +26,16 @@ const Footer = () => {
 
         <div className="flex flex-col gap-4">
           <span className="text-2xl text-orange-600">Follow Me</span>
-          {socialLinks.map(({ id, link, target, rel, icon: Icon }) => (
+          {socialLinks.map(({ id, link, target, rel, icon: Icon, name }) => (
             <a
               key={id}
               href={link}
               target={target}
               rel={rel}
-              className="hover:text-orange-400 text-gray-200 text-2xl transition-colors"
+              className="flex gap-3 hover:text-orange-400 text-gray-200 text-2xl transition-colors"
             >
               <Icon />
+              {name}
             </a>
           ))}
         </div>

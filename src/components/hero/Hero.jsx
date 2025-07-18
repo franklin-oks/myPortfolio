@@ -1,6 +1,6 @@
 import { Typewriter } from "react-simple-typewriter";
 import logo from "../../assets/me.jpg";
-import { FaPlay, FaBell } from "react-icons/fa";
+
 import { socialLinks, AboutText } from "../../utils/data";
 import { motion, spring } from "framer-motion";
 
