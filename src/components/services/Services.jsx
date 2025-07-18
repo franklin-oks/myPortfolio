@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import Captions from "../captions/Captions";
 import { myServices } from "../../utils/data";
+import { Link } from "react-scroll";
 
 const Services = () => {
   const childVariants = {
@@ -32,7 +33,7 @@ const Services = () => {
     >
       <Captions
         title="My Services"
-        description="I have helped many startup bussinesses and comapnies grow through my services"
+        description="I have helped many startup businesses and companies grow through my services."
       />
       <motion.div
         initial="hidden"
@@ -47,7 +48,7 @@ const Services = () => {
               key={index}
               variants={childVariants}
               className="flex-1 w-full min-h-[400px] flex flex-col space-y-6 justify-center items-center border border-neutral-900 p-6 dark:bg-neutral-800 dark:border-neutral-100
-              shadow-[0_8px_20px_rgba(255,165,0,2.55)] dark:shadow-[0_8px_20px_rgba(255,165,0,1.07)] transition-shadow
+              shadow-[0_8px_20px_rgba(0,0,0,2.05)] dark:shadow-[0_8px_20px_rgba(0,0,0,2.08)] transition-shadow
               rounded-xl
               "
             >
@@ -61,11 +62,13 @@ const Services = () => {
                 {content}
               </p>
               <motion.div
-                whileHover={{ scale: 1.3, backgroundColor: "orange" }}
+                whileHover={{ scale: 1.3, backgroundColor: "gray" }}
                 transition={{ duration: 0.9 }}
                 className="flex gap-4 font-bold border-3 dark:border-white my-4 border-neutral-900 dark:text-white p-2 cursor-pointer justify-center items-center"
               >
-                <span>{talk}</span>
+                <Link to="contact" smooth={true} duration={3000} offset={-20}>
+                  {talk}
+                </Link>
                 <span className="text-green-500">
                   <Icon2 />
                 </span>

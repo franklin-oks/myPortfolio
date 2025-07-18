@@ -3,7 +3,7 @@ import { Link } from "react-scroll";
 
 const Footer = () => {
   return (
-    <footer className="w-full bg-neutral-900 pt-15 h-auto dark:bg-neutral-900 p-4">
+    <footer className="w-full bg-blue-950 pt-15 h-auto p-4">
       <h2 className="text-center pt-8 font-bold text-xl text-white">
         Quick Links
       </h2>
@@ -42,9 +42,19 @@ const Footer = () => {
         <div className="flex flex-col gap-4">
           <span className="text-2xl text-orange-600">Get in touch</span>
           <div className="flex flex-col gap-3 text-gray-200 text-xl">
-            <span>Email: franklinokeke2016@gmail.com</span>
+            <a
+              href="mailto:franklinokeke2016@gmail.com"
+              className="cursor-pointer text-gray-200 text-xl dark:text-white hover:text-orange-400 transition-colors duration-500 after:content-[''] after:block after:h-[2px] after:bg-orange-400 after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-500 after:origin-left w-70"
+            >
+              franklinokeke2016@gmail.com
+            </a>
             <span>Address: 45 Ziks Avenue Uwani Enugu, Nigeria.</span>
-            <span>Tel: +234 8103919717</span>
+            <a
+              href="tel:+2348103919717s"
+              className="cursor-pointer text-gray-200 text-xl dark:text-white hover:text-orange-400 transition-colors duration-500 after:content-[''] after:block after:h-[2px] after:bg-orange-400 after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-500 after:origin-left w-40"
+            >
+              +2348103919717
+            </a>
           </div>
         </div>
       </div>

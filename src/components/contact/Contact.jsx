@@ -19,10 +19,6 @@ import Captions from "../captions/Captions";
 import emailjs from "@emailjs/browser";
 
 const Contact = () => {
-  {
-    /* <GrStatusGood /> */
-  }
-
   const parentVariants = {
     hidden: {},
     visible: {
@@ -53,9 +49,14 @@ const Contact = () => {
     setStatus("Sending...");
 
     emailjs
-      .sendForm("service_r9alg6a", "template_tqa1tic", form.current, {
-        publicKey: "q4EfsK0o1PrQ4eUVs",
-      })
+      .sendForm(
+        import.meta.env.VITE_EMAILJS_SERVICE_ID,
+        import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+        form.current,
+        {
+          publicKey: import.meta.env.VITE_EMAILJS_PUBLIC_KEY,
+        }
+      )
       .then(
         () => {
           form.current.reset();
@@ -63,7 +64,7 @@ const Contact = () => {
 
           setTimeout(() => {
             setStatus("");
-          }, 3000);
+          }, 5000);
         },
         (error) => {
           console.warn("FAILED...", error.text);
@@ -78,7 +79,7 @@ const Contact = () => {
     >
       <Captions
         title="Lets get in Touch"
-        description="Lets discuss on how to bring your ideas to life"
+        description="Let's discuss how to bring your ideas to life."
       />
 
       <motion.div
@@ -124,7 +125,7 @@ const Contact = () => {
               />
               <textarea
                 className="bg-white text-lg outline-0 p-3 rounded-xl"
-                placeholder="Your Message.."
+                placeholder="Your Message....."
                 cols="4"
                 rows="5"
                 name="message"
@@ -142,13 +143,6 @@ const Contact = () => {
                   : " Send Message"}
               </button>
             </form>
-            {status === "error" && (
-              <div>
-                <div style={{ color: "red", marginTop: "10px" }}>
-                  Failed to send. Please try again.
-                </div>
-              </div>
-            )}
           </div>
         </motion.div>
 
@@ -173,14 +167,26 @@ const Contact = () => {
               <MdEmail className="text-lg ml-4 text-blue-600" />
               <div className="flex flex-col">
                 <span>Email</span>
-                <span className="font-bold">franklinokeke2016@gmail.com</span>
+                <div className="flex flex-col">
+                  <a
+                    href="mailto:franklinokeke2016@gmail.com"
+                    className="font-bold hover:decoration-2 hover:text-blue-600 hover:decoration-blue-600 hover:underline"
+                  >
+                    franklinokeke2016@gmail.com
+                  </a>
+                </div>
               </div>
             </div>
             <div className="flex justify-start cursor-pointer hover:bg-gray-100 rounded-2xl items-center gap-3 bg-white p-2 space-x-6">
               <FaPhoneAlt className="text-lg ml-4 text-blue-600" />
               <div className="flex flex-col">
                 <span>Phone</span>
-                <span className="font-bold">+234 8103919717</span>
+                <a
+                  href="tel:+2348103919717"
+                  className="font-bold hover:decoration-2 hover:text-blue-600 hover:decoration-blue-600 hover:underline"
+                >
+                  +2348103919717
+                </a>
               </div>
             </div>
           </div>
@@ -250,6 +256,36 @@ const Contact = () => {
           </span>
         </div>
       </div>
+      {/*  */}
+
+      {(status === "Message Sent" || status === "error") && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50">
+          <div className="bg-white dark:bg-neutral-900 w-[90%] md:w-[30rem] p-6 rounded-2xl shadow-2xl relative">
+            <div className="flex flex-col gap-4 items-center text-center">
+              {status === "Message Sent" ? (
+                <>
+                  <GrStatusGood className="text-green-600 text-5xl" />
+                  <p className="text-neutral-900 dark:text-white text-xl font-semibold">
+                    Message sent successfully!
+                  </p>
+                </>
+              ) : (
+                <>
+                  <p className="text-red-600 text-xl font-semibold">
+                    Failed to send. Please try again.
+                  </p>
+                </>
+              )}
+            </div>
+            <button
+              className="absolute top-3 right-4 text-2xl text-gray-500 hover:text-red-500"
+              onClick={() => setStatus("")}
+            >
+              &times;
+            </button>
+          </div>
+        </div>
+      )}
     </section>
   );
 };

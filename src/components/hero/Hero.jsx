@@ -31,7 +31,7 @@ const Hero = () => {
             }}
             className="text-neutral-900  mt-12 ml-4 lg:mt-[24rem] lg:ml-[-2rem] md:text-5xl lg:text-5xl dark:text-white text-2xl sm:mt-12 sm:text-3xl font-bold"
           >
-            Helo, I'm{" "}
+            Hello, I'm{" "}
             <span className="text-orange-400 ">
               {name.split("").map((char, index) => (
                 <motion.span variants={variantName} key={index}>

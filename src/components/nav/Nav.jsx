@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import logo from "../../assets/logo.png";
+import logo from "../../assets/f-logo.png";
 import { FiMoon } from "react-icons/fi";
 import { IoSunnySharp } from "react-icons/io5";
 import { FaXmark } from "react-icons/fa6";

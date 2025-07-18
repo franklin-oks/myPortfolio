@@ -40,7 +40,7 @@ const Projects = () => {
         whileInView="visible"
         variants={parentVariants}
         viewport={{ once: false, amount: 0.05 }}
-        className="flex flex-col md:flex-row flex-wrap justify-center p-4 gap-6 lg:gap-4 mt-12"
+        className="flex flex-col md:flex-row flex-wrap justify-center p-4 gap-6  lg:gap-8 mt-12"
       >
         {projects.map(
           (
@@ -59,7 +59,7 @@ const Projects = () => {
             <motion.div
               variants={childVariants}
               key={index}
-              className="w-full sm:w-[90%] md:w-[47%] lg:w-[30%] bg-white dark:bg-black rounded-lg shadow-lg overflow-hidden"
+              className="w-full sm:w-[90%] md:w-[47%] lg:w-[30%] bg-white dark:bg-neutral-700 rounded-lg shadow-lg overflow-hidden"
             >
               {/* Image + Overlay */}
               <div className="relative group">
