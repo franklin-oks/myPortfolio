@@ -91,12 +91,6 @@ const Contact = () => {
           console.warn("FAILED...", error.text);
         }
       );
-    // console.log(
-    //   "ENV:",
-    //   import.meta.env.VITE_EMAILJS_SERVICE_ID,
-    //   import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
-    //   import.meta.env.VITE_EMAILJS_PUBLIC_KEY
-    // );
   };
 
   return (
