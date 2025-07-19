@@ -152,9 +152,9 @@ export const projects = [
     title: "Nexflix Clone",
     description: `A dynamic movie streaming website that fetches real-time data from the TMDB API to display trending and featured movies. This project helped me strengthen my understanding of API integration using the useEffect hook in React. I also implemented Firebase authentication to manage user sign-in and sign-up. It was a valuable hands-on experience in building interactive, real-world applications.`,
     code: "View Code",
-    codeLink: "https://www.github.com",
+    codeLink: "https://github.com/franklin-oks/nextflix_clone",
     live: "Live Preview",
-    liveLink: "https://www.varcel.com",
+    liveLink: "https://nextflix-clone-3ovg.vercel.app/",
     stack: `[ React || Css || TMDB API || Firebase ]`,
   },
   {
@@ -192,9 +192,9 @@ export const projects = [
     title: "E-Commerce",
     description: `This was my very first project after learning Tailwind CSS and React. While it's simple and not fully polished, it represents the beginning of my frontend development journey. I built a responsive e-commerce interface to practice layout design, styling, and component-based architecture. It’s a meaningful milestone that reminds me how far I’ve come.`,
     code: "View Code",
-    codeLink: "https://www.github.com",
+    codeLink: "https://github.com/franklin-oks/QucikEat-ReactProject",
     live: "Live Preview",
-    liveLink: "https://www.varcel.com",
+    liveLink: "https://qucik-eat-react-project.vercel.app/",
     stack: `[ React || TailwindCss ]`,
   },
 ];

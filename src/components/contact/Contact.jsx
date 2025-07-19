@@ -1,10 +1,4 @@
-import {
-  motion,
-  spring,
-  useInView,
-  useScroll,
-  useTransform,
-} from "framer-motion";
+import { motion } from "framer-motion";
 import { useState, useRef } from "react";
 import { LuSend } from "react-icons/lu";
 import { FaLocationDot } from "react-icons/fa6";
@@ -41,11 +35,37 @@ const Contact = () => {
     },
   };
 
+  // Form validation
+  const [errors, setErrors] = useState({});
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    number: "",
+    message: "",
+  });
+
+  const validateForm = () => {
+    const newErrors = {};
+    if (!formData.name.trim()) newErrors.name = "Name is Required";
+    else if (formData.name.trim().length < 2)
+      newErrors.name = "Atleast two characters required";
+    if (!formData.email.trim()) newErrors.email = "Email is Required";
+    else if (!/\S+@\S+\.\S+/.test(formData.email))
+      newErrors.email = "Email is invalid";
+    if (!formData.number.trim()) newErrors.number = "Number is Required";
+    if (!formData.message.trim()) newErrors.message = "Message is required";
+
+    setErrors(newErrors);
+    return Object.keys(newErrors).length === 0;
+  };
+
+  // form submission EmailJs
   const form = useRef();
   const [status, setStatus] = useState("");
 
   const sendEmail = (e) => {
     e.preventDefault();
+    if (!validateForm()) return;
     setStatus("Sending...");
 
     emailjs
@@ -60,6 +80,7 @@ const Contact = () => {
       .then(
         () => {
           form.current.reset();
+          setFormData({ name: "", email: "", number: "", message: "" });
           setStatus("Message Sent");
 
           setTimeout(() => {
@@ -70,6 +91,12 @@ const Contact = () => {
           console.warn("FAILED...", error.text);
         }
       );
+    // console.log(
+    //   "ENV:",
+    //   import.meta.env.VITE_EMAILJS_SERVICE_ID,
+    //   import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+    //   import.meta.env.VITE_EMAILJS_PUBLIC_KEY
+    // );
   };
 
   return (
@@ -103,27 +130,52 @@ const Contact = () => {
               className="flex flex-col p-2 space-y-4"
             >
               <input
+                value={formData.name}
+                onChange={(e) =>
+                  setFormData({ ...formData, name: e.target.value })
+                }
                 className="bg-white text-lg outline-0 p-3"
                 type="text"
                 name="name"
                 placeholder="Enter Name"
                 required
               />
+              {errors.name && (
+                <span className="text-sm text-red-500">{errors.name}</span>
+              )}
               <input
+                value={formData.email}
+                onChange={(e) =>
+                  setFormData({ ...formData, email: e.target.value })
+                }
                 className="bg-white text-lg outline-0 p-3"
                 type="email"
                 name="email"
                 placeholder="Email"
                 required
               />
+              {errors.email && (
+                <span className="text-sm text-red-500">{errors.email}</span>
+              )}
               <input
+                value={formData.number}
+                onChange={(e) =>
+                  setFormData({ ...formData, number: e.target.value })
+                }
                 className="bg-white text-lg outline-0 p-3"
                 type="number"
                 name="number"
                 placeholder="Phone Number"
                 required
               />
+              {errors.number && (
+                <span className="text-sm text-red-500">{errors.number}</span>
+              )}
               <textarea
+                value={formData.message}
+                onChange={(e) =>
+                  setFormData({ ...formData, message: e.target.value })
+                }
                 className="bg-white text-lg outline-0 p-3 rounded-xl"
                 placeholder="Your Message....."
                 cols="4"
@@ -131,6 +183,9 @@ const Contact = () => {
                 name="message"
                 required
               />
+              {errors.message && (
+                <span className="text-sm text-red-500">{errors.message}</span>
+              )}
               <button
                 className="flex text-xl rounded-full hover:bg-blue-800 transition-colors cursor-pointer duration-100 p-3 my-5 bg-blue-600 text-white justify-center gap-3 items-center"
                 type="submit"
