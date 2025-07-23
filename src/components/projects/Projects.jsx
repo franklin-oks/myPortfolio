@@ -53,6 +53,7 @@ const Projects = () => {
               stack,
               codeLink,
               liveLink,
+              icon: Icon,
             },
             index
           ) => (
@@ -62,34 +63,41 @@ const Projects = () => {
               className="w-full sm:w-[90%] md:w-[47%] lg:w-[30%] bg-white dark:bg-neutral-700 rounded-lg shadow-lg overflow-hidden"
             >
               {/* Image + Overlay */}
-              <div className="relative group">
-                <img
-                  src={image}
-                  alt="logo"
-                  className="w-full h-[22rem] object-cover transition duration-500 group-hover:brightness-40"
-                />
 
-                {/* Overlay Buttons */}
-                <div className="absolute inset-0 flex items-center justify-center gap-4 opacity-0 group-hover:opacity-100 transition duration-500">
-                  <a
-                    href={codeLink}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="px-4 py-2 rounded-xl bg-green-500 text-white font-semibold shadow-md hover:bg-green-600"
-                  >
-                    {code}
-                  </a>
-                  <a
-                    href={liveLink}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="px-4 py-2 rounded-xl bg-green-500 text-white font-semibold shadow-md hover:bg-green-600"
-                  >
-                    {live}
+              <a href={liveLink} target="_blank" rel="noopener noreferrer">
+                <div className="relative group">
+                  <img
+                    src={image}
+                    alt="logo"
+                    className="w-full h-[22rem] object-cover transition duration-500 group-hover:brightness-40"
+                  />
+
+                  {/* Overlay Buttons */}
+                  <div className="hidden lg:flex absolute inset-0 flex items-center justify-center gap-4 opacity-0 group-hover:opacity-100 transition duration-500">
+                    <a
+                      href={codeLink}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="hidden lg:block   px-4 py-2 rounded-xl bg-green-500 text-white font-semibold shadow-md hover:bg-green-600"
+                    >
+                      {code}
+                    </a>
+                    <a
+                      href={liveLink}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="px-4 py-2 rounded-xl bg-green-500 text-white font-semibold shadow-md hover:bg-green-600"
+                    >
+                      {live}
+                    </a>
+                  </div>
+                  <a href={codeLink} target="_blank" rel="noopener noreferrer">
+                    <span className="absolute top-4 right-4 bg-neutral-700 text-2xl flex justify-center items-center w-12 h-12 rounded-full text-white cursor-pointer">
+                      {<Icon />}
+                    </span>
                   </a>
                 </div>
-              </div>
-
+              </a>
               {/* Text Content */}
               <div className="p-6 flex flex-col">
                 <h2 className="text-xl dark:text-white font-bold mb-3">
