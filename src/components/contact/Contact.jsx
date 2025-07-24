@@ -208,7 +208,7 @@ const Contact = () => {
               <div className="flex flex-col">
                 <span>Location</span>
                 <span className="font-bold">
-                  NO 45 Ziks Avenue Uwani Enugu, Nigeria.
+                  NO 4, Admirally way Lekki phase 1 Lagos, Nigeria.
                 </span>
               </div>
             </div>
@@ -255,7 +255,7 @@ const Contact = () => {
                 <span>GitHub</span>
               </a>
               <a
-                href="https://linkedin.com/franklin-oks"
+                href="https://www.linkedin.com/in/franklin-okeke-0b1967376/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex justify-center gap-3 items-center text-xl bg-blue-600 hover:bg-blue-800 text-white rounded-full px-4 py-2"
@@ -264,7 +264,7 @@ const Contact = () => {
                 <span>LinkedIn</span>
               </a>
               <a
-                href="https://x.com/franklinokeke"
+                href="https://x.com/franklin__okeke/status/1948457039124201954"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex justify-center gap-3 items-center text-xl bg-blue-600 hover:bg-blue-800 text-white rounded-full px-4 py-2"
@@ -273,7 +273,7 @@ const Contact = () => {
                 <span>Twitter</span>
               </a>
               <a
-                href="https://facebook.com/franklinobinna"
+                href="https://web.facebook.com/franklinokekeTech"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex justify-center gap-3 items-center text-xl bg-blue-600 hover:bg-blue-800 text-white rounded-full px-4 py-2"
@@ -282,7 +282,7 @@ const Contact = () => {
                 <span>Facebook</span>
               </a>
               <a
-                href="https://instagram.com/franklinokeke"
+                href="https://www.instagram.com/franklinokeke_tech/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex justify-center gap-3 items-center text-xl bg-blue-600 hover:bg-blue-800 text-white rounded-full px-4 py-2"

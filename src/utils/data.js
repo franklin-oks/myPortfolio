@@ -19,7 +19,7 @@ import portfolio from "../assets/portfolio.png";
 export const socialLinks = [
   {
     id: 1,
-    link: "https://facebook.com/franklin obinna",
+    link: "https://web.facebook.com/franklinokekeTech",
     target: "_blank",
     rel: "noopener noreferrer",
     icon: FaFacebook,
@@ -27,7 +27,7 @@ export const socialLinks = [
   },
   {
     id: 2,
-    link: "https://x.com/franklinokeke",
+    link: "https://x.com/franklin__okeke/status/1948457039124201954",
     target: "_blank",
     rel: "noopener noreferrer",
     icon: FaXTwitter,
@@ -35,7 +35,7 @@ export const socialLinks = [
   },
   {
     id: 3,
-    link: "https://instagram.com/franklinokeke",
+    link: "https://www.instagram.com/franklinokeke_tech/",
     target: "_blank",
     rel: "noopener noreferrer",
     icon: FaInstagram,
@@ -51,7 +51,7 @@ export const socialLinks = [
   },
   {
     id: 5,
-    link: "https://linkedin.com/franklin-oks",
+    link: "https://www.linkedin.com/in/franklin-okeke-0b1967376/",
     target: "_blank",
     rel: "noopener noreferrer",
     icon: FaLinkedin,
@@ -72,7 +72,7 @@ export const AboutText = {
             delivered value to startups and businesses using industry-standard
             tools, helping them to grow thier customers and audience. `,
 
-  paragraphTwo: `I'm opened to job opportunities, project colaborations, freelance
+  paragraphTwo: `I'm opened to job opportunities, project collaborations, freelance
             gigs. Where I can contribute, learn and grow. If you have a good
             opportunity that matches my skills and experiences then don't
             hesitate to contact me.`,
@@ -142,10 +142,10 @@ export const projects = [
     title: "CodeMaths",
     description: `CodeMaths is an advanced web application aimed at helping students and educators solve a variety of mathematical problems efficiently. It currently supports solutions for quadratic equations, 3D linear equations, Eignenvalues and Eigenvectors etc. and a range of matrix operations. Built with React, MathJS. Integrated user authentication with firebase. It offers a responsive and intuitive user interface. Additional modules like differentiation and integration are actively being developed and will be available once its development is complete.`,
     code: "View Code",
-    codeLink: "https://www.github.com",
+    codeLink: "http",
     icon: FaGithub,
     live: "Live Preview",
-    liveLink: "https://www.varcel.com",
+    liveLink: "https://code-maths.vercel.app/",
     stack: `[ React || TailwindCss || MathJS || Firebase ]`,
   },
   {
@@ -187,9 +187,9 @@ export const projects = [
     description: `A clean, modern, and fully responsive portfolio website designed to showcase my skills, experience, and projects. It features a smooth light/dark mode toggle, interactive animations using Framer Motion, and a functional contact form powered by EmailJS for real-time messaging. Built with React and styled using Tailwind CSS, this project reflects my frontend development proficiency and personal brand.`,
     code: "View Code",
     icon: FaGithub,
-    codeLink: "https://www.github.com",
+    codeLink: "https://github.com/franklin-oks/myPortfolio",
     live: "Live Preview",
-    liveLink: "https://www.varcel.com",
+    liveLink: "https://my-portfolio-htot.vercel.app",
     stack: `[ React || TailwindCss || Framer Motion || EmailJs ]`,
   },
   {

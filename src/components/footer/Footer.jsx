@@ -49,7 +49,7 @@ const Footer = () => {
             >
               franklinokeke2016@gmail.com
             </a>
-            <span>Address: 45 Ziks Avenue Uwani Enugu, Nigeria.</span>
+            <span>NO 4, Admirally way Lekki phase 1 Lagos, Nigeria.</span>
             <a
               href="tel:+2348103919717s"
               className="cursor-pointer text-gray-200 text-xl dark:text-white hover:text-orange-400 transition-colors duration-500 after:content-[''] after:block after:h-[2px] after:bg-orange-400 after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-500 after:origin-left w-40"
