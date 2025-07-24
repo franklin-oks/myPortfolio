@@ -29,7 +29,7 @@ const Services = () => {
   return (
     <section
       id="services"
-      className="h-auto pt-15  dark:bg-neutral-900 bg-neutral-100"
+      className="h-auto pt-5 md:pt-15  dark:bg-neutral-900 bg-neutral-100"
     >
       <Captions
         title="My Services"

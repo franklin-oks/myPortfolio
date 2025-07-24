@@ -140,13 +140,13 @@ export const projects = [
   {
     image: codeMaths,
     title: "CodeMaths",
-    description: `CodeMaths is an advanced web application aimed at helping students and educators solve a variety of mathematical problems efficiently. It currently supports solutions for quadratic equations, 3D linear equations, and a range of matrix operations. Built with React, MathJS, and AlgebraJS, it offers a responsive and intuitive user interface. Additional modules like differentiation and integration are actively being developed. Live preview and source code will be available once development is complete.`,
+    description: `CodeMaths is an advanced web application aimed at helping students and educators solve a variety of mathematical problems efficiently. It currently supports solutions for quadratic equations, 3D linear equations, Eignenvalues and Eigenvectors etc. and a range of matrix operations. Built with React, MathJS. Integrated user authentication with firebase. It offers a responsive and intuitive user interface. Additional modules like differentiation and integration are actively being developed and will be available once its development is complete.`,
     code: "View Code",
     codeLink: "https://www.github.com",
     icon: FaGithub,
     live: "Live Preview",
     liveLink: "https://www.varcel.com",
-    stack: `[ React || TailwindCss || MathJS || AlgebraJS ]`,
+    stack: `[ React || TailwindCss || MathJS || Firebase ]`,
   },
   {
     image: netflix_1,

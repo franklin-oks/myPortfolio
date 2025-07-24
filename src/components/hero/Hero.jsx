@@ -59,7 +59,7 @@ const Hero = () => {
           <p className="text-xl lg:ml-[-2rem] lg:text-2xl md:text-2xl dark:text-gray-300 text-neutral-900 leading-relaxed sm:leading-loose max-w-[60ch]">
             {AboutText.paragraphOne}
           </p>
-          <p className="text-xl lg:ml-[-2rem] md:text-2xl md:mt-[-1rem] dark:text-gray-300 text-neutral-900 leading-relaxed sm:leading-loose mt-8 max-w-[60ch] ">
+          <p className="text-xl lg:ml-[-2rem] md:text-2xl md:mt-[-1rem] dark:text-gray-300 text-neutral-900 leading-relaxed sm:leading-loose mt-[-1rem] md:mt-8 max-w-[60ch] ">
             {AboutText.paragraphTwo}
           </p>
           <div className="flex lg:ml-[-2rem] space-x-8 mt-4 mb-10">
