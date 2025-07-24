@@ -1,6 +1,6 @@
 import { Typewriter } from "react-simple-typewriter";
 import logo from "../../assets/me.jpg";
-
+import { Link } from "react-scroll";
 import { socialLinks, AboutText } from "../../utils/data";
 import { motion, spring } from "framer-motion";
 
@@ -63,12 +63,16 @@ const Hero = () => {
             {AboutText.paragraphTwo}
           </p>
           <div className="flex lg:ml-[-2rem] space-x-8 mt-4 mb-10">
-            <button className="px-8  lg:h-18 sm:w-45 md:w-65 md:my-4 md:h-25 sm:text-lg md:text-3xl animate-bounce  py-4  border-1 text-sm font-bold shadow-2xl rounded-2xl border-neutral-900 text-neutral-900 dark:border-1 cursor-pointer dark:border-neutral-100 dark:text-white hover:bg-neutral-600 hover:text-white hover:border-transparent transition-colors duration-500">
-              Contact Me
-            </button>
-            <button className="px-8 sm:w-45 md:w-65 md:my-4 md:text-3xl sm:text-lg py-4 animate-bounce border-1 text-sm font-bold shadow-2xl rounded-2xl border-neutral-900 text-neutral-900 dark:border-1 cursor-pointer dark:border-neutral-100 dark:text-white hover:bg-neutral-600 hover:text-white hover:border-transparent transition-colors duration-500">
-              Hire Me
-            </button>
+            <Link to="contact" smooth={true} duration={3000} offset={-20}>
+              <button className="px-8  lg:h-18 sm:w-45 md:w-65 md:my-4 md:h-25 sm:text-lg md:text-3xl animate-bounce  py-4  border-1 text-sm font-bold shadow-2xl rounded-2xl border-neutral-900 text-neutral-900 dark:border-1 cursor-pointer dark:border-neutral-100 dark:text-white hover:bg-neutral-600 hover:text-white hover:border-transparent transition-colors duration-500">
+                Contact Me
+              </button>
+            </Link>
+            <Link to="youtube" smooth={true} duration={3000} offset={-20}>
+              <button className="px-8 sm:w-45 md:w-65 md:my-4 md:text-3xl sm:text-lg py-4 animate-bounce border-1 text-sm font-bold shadow-2xl rounded-2xl border-neutral-900 text-neutral-900 dark:border-1 cursor-pointer dark:border-neutral-100 dark:text-white hover:bg-neutral-600 hover:text-white hover:border-transparent transition-colors duration-500">
+                My Channel
+              </button>
+            </Link>
           </div>
           <div className="flex lg:ml-[-2rem] md:text-6xl lg:text-2xl  text-4xl mt-[-1rem] ml-4 mb-10 space-x-6 text-neutral-900 dark:text-white">
             {socialLinks.map(({ id, link, target, rel, icon: Icon }) => (
