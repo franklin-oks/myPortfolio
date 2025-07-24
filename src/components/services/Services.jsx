@@ -48,7 +48,7 @@ const Services = () => {
               key={index}
               variants={childVariants}
               className="flex-1 w-full min-h-[400px] flex flex-col space-y-6 justify-center items-center border border-neutral-900 p-6 dark:bg-neutral-800 dark:border-neutral-100
-              shadow-[0_8px_20px_rgba(0,0,0,2.05)] dark:shadow-[0_8px_20px_rgba(0,0,0,2.08)] transition-shadow
+              shadow-[0_8px_20px_rgba(0,0,0,0.29)] dark:shadow-[0_8px_20px_rgba(0,0,0,0.29)] transition-shadow
               rounded-xl
               "
             >

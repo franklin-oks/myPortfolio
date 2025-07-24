@@ -19,7 +19,7 @@ import portfolio from "../assets/portfolio.png";
 export const socialLinks = [
   {
     id: 1,
-    link: "https://facebook.com/franklinobinna",
+    link: "https://facebook.com/franklin obinna",
     target: "_blank",
     rel: "noopener noreferrer",
     icon: FaFacebook,

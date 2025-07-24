@@ -69,7 +69,7 @@ const Projects = () => {
                   <img
                     src={image}
                     alt="logo"
-                    className="w-full h-[22rem] object-cover transition duration-500 group-hover:brightness-40"
+                    className="w-full h-[16rem] md:h-[22rem] object-cover object-center transition duration-500 group-hover:brightness-40"
                   />
 
                   {/* Overlay Buttons */}

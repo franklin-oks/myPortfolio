@@ -12,7 +12,7 @@ const Call = () => {
           transition: { duration: 0.6 },
         }}
         viewport={{ once: false, amount: 0.05 }}
-        className="flex justify-center items-center shadow-[0_8px_20px_rgba(0,0,0,2.05)] dark:shadow-[0_8px_20px_rgba(0,0,0,2.08)] transition-shadow
+        className="flex justify-center items-center shadow-[0_8px_20px_rgba(0,0,0,0.29)] dark:shadow-[0_8px_20px_rgba(0,0,0,0.29)] transition-shadow
               rounded-xl lg:w-[50%] lg:ml-[25rem] lg:my-[6rem]"
       >
         <div className="flex flex-col p-4 space-y-8 lg:space-y-10 items-center justify-center">
