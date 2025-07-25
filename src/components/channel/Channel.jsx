@@ -33,7 +33,7 @@ const Channel = () => {
 
           <div className="flex md:ml-[.3rem]  py-1 md:ml-[-6rem] mb-8 space-x-6 sm:space-x-12 justify-center  md:mt-2 mt-10 sm:ml-[-12rem]">
             <a
-              href="www.youtube.com/@franklinwebdev"
+              href="https://www.youtube.com/@franklinokeke2025"
               target="_blank"
               rel="noopener noreferrer"
               className="px-5 md:px-8 flex gap-2 lg:h-18 md:text-3xl md:w-75 md:h-25  items-center w-full sm:w-auto py-2 md:py-4 animate-pulse border-1 text-sm font-bold shadow-2xl rounded-2xl border-neutral-900 text-neutral-900 dark:border-1 cursor-pointer dark:border-neutral-100 dark:text-neutral-100 hover:bg-red-600 hover:text-white hover:border-transparent transition-colors duration-500"
@@ -43,7 +43,7 @@ const Channel = () => {
               <span className="md:hidden">Videos</span>
             </a>
             <a
-              href="www.youtube.com/@franklinwebdev?sub_confirmation=1"
+              href="https://www.youtube.com/@franklinokeke2025?sub_confirmation=1"
               target="_blank"
               rel="noopener noreferrer"
               className="px-5 md:px-8 flex gap-2 md:text-3xl items-center w-full sm:w-auto animate-pulse py-2 md:py-4 border-1 text-sm font-bold shadow-2xl rounded-2xl border-neutral-900 text-neutral-900 dark:border-1 cursor-pointer dark:border-neutral-100 dark:text-neutral-100 hover:bg-red-600 hover:text-white hover:border-transparent transition-colors duration-500"
