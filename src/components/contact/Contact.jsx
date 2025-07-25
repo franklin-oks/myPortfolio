@@ -208,7 +208,7 @@ const Contact = () => {
               <div className="flex flex-col">
                 <span>Location</span>
                 <span className="font-bold">
-                  NO 4, Admirally way Lekki phase 1 Lagos, Nigeria.
+                  NO 4, Admiralty way Lekki phase 1 Lagos, Nigeria.
                 </span>
               </div>
             </div>
