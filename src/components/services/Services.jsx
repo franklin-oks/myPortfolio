@@ -55,7 +55,7 @@ const Services = () => {
               <span className="flex md:my-9  justify-center items-center w-15 h-15 bg-neutral-300 rounded-full dark:bg-neutral-700 shadow-2xs text-orange-400 text-2xl dark:text-white">
                 <Icon />
               </span>
-              <h3 className="text-xl md:text-4xl font-bold dark:text-white">
+              <h3 className="text-xl md:text-4xl lg:text-2xl font-bold dark:text-white">
                 {title}
               </h3>
               <p className="text-center md:text-2xl  text-lg dark:text-gray-300">

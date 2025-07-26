@@ -31,7 +31,7 @@ const Channel = () => {
             Subscriptions are free!
           </strong>
 
-          <div className="flex md:ml-[.3rem]  py-1 md:ml-[-6rem] mb-8 space-x-6 sm:space-x-12 justify-center  md:mt-2 mt-10 sm:ml-[-12rem]">
+          <div className="flex md:ml-[.3rem]  py-1 mb-8 space-x-6 sm:space-x-12 justify-center  md:mt-2 mt-10 sm:ml-[-12rem]">
             <a
               href="https://www.youtube.com/@franklinokeke2025"
               target="_blank"

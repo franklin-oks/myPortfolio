@@ -93,11 +93,11 @@ const Skills = () => {
             key={index}
             className="flex text-xl flex-col justify-center items-center text-neutral-100"
           >
-            <span className="text-3xl text-orange-500 font-bold">
+            <span className="text-3xl  text-orange-500 font-bold">
               {" "}
               <AnimatedNumber target={number} suffix={suffix} />
             </span>
-            <span>{title}</span>
+            <span className="md:text-sm md:ml-6">{title}</span>
           </motion.div>
         ))}
       </motion.div>

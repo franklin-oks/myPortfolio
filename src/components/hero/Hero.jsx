@@ -59,7 +59,7 @@ const Hero = () => {
           <p className="text-xl lg:ml-[-2rem] lg:text-2xl md:text-2xl dark:text-gray-300 text-neutral-900 leading-relaxed sm:leading-loose max-w-[60ch]">
             {AboutText.paragraphOne}
           </p>
-          <p className="text-xl lg:ml-[-2rem] md:text-2xl md:mt-[-1rem] dark:text-gray-300 text-neutral-900 leading-relaxed sm:leading-loose mt-[-1rem] md:mt-8 max-w-[60ch] ">
+          <p className="text-xl lg:ml-[-2rem] md:text-2xl md:mt-[-1rem] dark:text-gray-300 text-neutral-900 leading-relaxed sm:leading-loose mt-[-1rem]  max-w-[60ch] ">
             {AboutText.paragraphTwo}
           </p>
           <div className="flex lg:ml-[-2rem] space-x-8 mt-4 mb-10">
@@ -69,12 +69,12 @@ const Hero = () => {
               </button>
             </Link>
             <Link to="youtube" smooth={true} duration={3000} offset={-20}>
-              <button className="px-8 sm:w-45 md:w-65 md:my-4 md:text-3xl sm:text-lg py-4 animate-bounce border-1 text-sm font-bold shadow-2xl rounded-2xl border-neutral-900 text-neutral-900 dark:border-1 cursor-pointer dark:border-neutral-100 dark:text-white hover:bg-neutral-600 hover:text-white hover:border-transparent transition-colors duration-500">
+              <button className="px-8  lg:h-18 sm:w-45 md:w-65 md:my-4 md:h-25 sm:text-lg md:text-3xl animate-bounce  py-4  border-1 text-sm font-bold shadow-2xl rounded-2xl border-neutral-900 text-neutral-900 dark:border-1 cursor-pointer dark:border-neutral-100 dark:text-white hover:bg-neutral-600 hover:text-white hover:border-transparent transition-colors duration-500">
                 My Channel
               </button>
             </Link>
           </div>
-          <div className="flex lg:ml-[-2rem] md:text-6xl lg:text-2xl  text-4xl mt-[-1rem] ml-4 mb-10 space-x-6 text-neutral-900 dark:text-white">
+          <div className="flex lg:ml-[-2rem] md:text-5xl lg:text-2xl  text-4xl mt-[-1rem] ml-4 mb-10 space-x-6 text-neutral-900 dark:text-white">
             {socialLinks.map(({ id, link, target, rel, icon: Icon }) => (
               <a
                 key={id}
@@ -97,8 +97,8 @@ const Hero = () => {
         >
           <motion.img
             animate={{
-              scale: [1, 1.05, 1],
-              rotate: [1, 2, 1],
+              scale: [1, 1.01, 1],
+              rotate: [1, 1.01, 1],
             }}
             transition={{
               duration: 2,

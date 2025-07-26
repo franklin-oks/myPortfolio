@@ -103,8 +103,8 @@ export const myServices = [
   {
     icon: GiElectricalResistance,
     title: "Electrical Engineer",
-    content: `competent and certified in electrical wiring and service design, solar, camera and CCTV installation
-                        and maintenances`,
+    content: ` Certified and competent in electrical wiring and service design, solar system installation, 
+               CCTV and camera setup, and maintenance. I also specialize in electrical wiring diagrams delivering quality service at an affordable cost. `,
     talk: "Lets talk",
     icon2: FaLongArrowAltRight,
   },
@@ -190,7 +190,7 @@ export const projects = [
     codeLink: "https://github.com/franklin-oks/myPortfolio",
     live: "Live Preview",
     liveLink: "https://my-portfolio-htot.vercel.app",
-    stack: `[ React || TailwindCss || Framer Motion || EmailJs ]`,
+    stack: `[ React || TailwindCss || Framer Motion ]`,
   },
   {
     image: quickeat,
