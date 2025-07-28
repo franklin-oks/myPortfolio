@@ -112,7 +112,7 @@ const Hero = () => {
             }}
             src={logo}
             alt="logo"
-            className="w-96 h-96 lg:w-130 lg:h-130 lg:mr-[14rem] lg:mt-[6rem] md:w-170 md:h-170 md:ml-5 sm:w-130 sm:h-130 sm:rounded-3xl sm:ml-6 p-3 object-cover  rounded-2xl shadow-2xl"
+            className="w-96 h-1/3 lg:w-130 lg:h-130 lg:mr-[14rem] lg:mt-[6rem] md:w-170 md:h-170 md:ml-5 sm:w-130 sm:h-130 sm:rounded-3xl sm:ml-6 p-3 object-cover  rounded-2xl shadow-2xl"
           />
         </motion.div>
       </div>
