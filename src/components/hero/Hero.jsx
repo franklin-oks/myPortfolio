@@ -1,5 +1,5 @@
 import { Typewriter } from "react-simple-typewriter";
-import logo from "../../assets/me.jpg";
+import logo from "../../assets/senator.jpg";
 import { Link } from "react-scroll";
 import { socialLinks, AboutText } from "../../utils/data";
 import { motion, spring } from "framer-motion";
