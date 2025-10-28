@@ -15,6 +15,7 @@ import education from "../assets/education.png";
 import netflix_1 from "../assets/netflix_1.png";
 import quickeat from "../assets/quickeat-main.png";
 import portfolio from "../assets/portfolio.png";
+import ecommerce from "../assets/search-page.png";
 
 export const socialLinks = [
   {
@@ -113,9 +114,12 @@ export const myServices = [
 export const skills = [
   "JavaScript",
   "React JS",
+  "TypeScript",
+  "NextJs",
+  "Supabase",
+  "TailwindCss",
   "Python",
   "Django",
-  "TailwindCss",
   "SQL",
   "Framer Motion",
   "Html5",
@@ -137,6 +141,24 @@ export const ratings = [
 ];
 
 export const projects = [
+  {
+    image: ecommerce,
+    title: "FullStack Ecommerce",
+    description: `
+     A dynamic full-stack e-commerce web application
+     built with Next.js (App Router) and Supabase as the backend database and storage. The platform allows customers to browse beautifully designed product listings, view detailed product pages, and make secure online payments through Paystack
+     integration or manual bank transfers.
+     Admin users can securely log in to an admin 
+     dashboard where they can add, edit, or delete products, 
+     with changes instantly reflected across the site. Product images are automatically compressed in the browser using a lightweight compression library before uploading to Supabase storage, helping minimize file size and optimize performance.
+    `,
+    code: "View Code",
+    codeLink: "https://github.com/franklin-oks/E-commerceNext.Js",
+    icon: FaGithub,
+    live: "Live Preview",
+    liveLink: "https://e-commerce-next-js-mu-five.vercel.app/",
+    stack: `[ JavaScript || Nextjs ||Supabase || TailwindCss || Framer Motion ]`,
+  },
   {
     image: codeMaths,
     title: "CodeMaths",
